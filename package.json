@@ -2,7 +2,7 @@
   "name": "basic-node",
   "version": "1.0.0",
   "description": "This is for basic nodeJS project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node app.js"
   },

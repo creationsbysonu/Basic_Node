@@ -50,7 +50,7 @@ app.post("/book",upload.single("image"),async (req,res)=>{
     if(!req.file){
         fileName = "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
     }else{
-            fileName = "http://localhost:3000/" + req.file.filename
+            fileName = "https://basic-node-48px.onrender.com/" + req.file.filename
         }
     
     const {bookName,bookPrice,isbnNumber,publishedAt,authorName,publication} = req.body
@@ -129,7 +129,7 @@ app.patch("/book/:id",upload.single('image'), async (req,res)=>{
     if (req.file){
         const OldImagePath = oldDatas.imageUrl
         console.log(OldImagePath)
-        const localHostUrlLength = 'http://localhost:3000/'.length
+        const localHostUrlLength = 'https://basic-node-48px.onrender.com/'.length
         const newOldImagePath = OldImagePath.slice(localHostUrlLength)
         console.log(newOldImagePath)
         fs.unlink(`storage/${newOldImagePath}`,(err)=>{
@@ -139,7 +139,7 @@ app.patch("/book/:id",upload.single('image'), async (req,res)=>{
                 console.log("File Deleted Successfully")
             }
         })
-        fileName= "http://localhost:3000/" + req.file.filename
+        fileName= "https://basic-node-48px.onrender.com/" + req.file.filename
     }
     
     await Book.findByIdAndUpdate(id,{
