@@ -2,9 +2,9 @@
   "name": "basic-node",
   "version": "1.0.0",
   "description": "This is for basic nodeJS project",
-  "main": "index.js",
+  "main": "nodemon app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "index.js"
   },
   "keywords": [
     "Sonu",

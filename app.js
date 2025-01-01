@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const fs = require('fs')
 
-const ConnectToDatabase = require('./index')
+const ConnectToDatabase = require('./database/index')
 const Book = require('./model/bookModel')
 
 //multerconfig imports
