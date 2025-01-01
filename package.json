@@ -4,7 +4,7 @@
   "description": "This is for basic nodeJS project",
   "main": "index.js",
   "scripts": {
-    "start": "app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [
     "Sonu",
