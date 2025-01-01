@@ -167,6 +167,6 @@ app.use(express.static("./storage"))
 
 
 app.listen(3000,()=>{
-    console.log("Nodejs Hello Port Testing and connected to port:3000")
+    console.log("Nodejs Hello Port Testing and also connected to port:3000")
 })
 
